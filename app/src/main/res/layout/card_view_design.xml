@@ -2,8 +2,16 @@
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:id="@+id/cardview"
     android:layout_margin="5dp"
     android:elevation="9dp">
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:animateLayoutChanges="true">
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -25,4 +33,15 @@
         android:lines="1"
         android:textStyle="bold" />
 </LinearLayout>
+        <TextView
+            android:id="@+id/detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:visibility="gone"
+            android:text="A RecyclerView is an advanced version of ListView with improved performance. When you have a long list of items to show you can use RecyclerView. It has the ability to reuse its views.
+            In RecyclerView when the View goes out of the screen or not visible to the user it won’t destroy it, it will reuse these views.
+            This feature helps in reducing power consumption and providing more responsiveness to the application."
+            android:textSize="16sp"/>
+    </LinearLayout>
 </androidx.cardview.widget.CardView>
